@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+ .count{
+  width:40px;
+ }
+ .nav-bg{
+  background-color: #64CCC5;
+ }
+
+ /* Add styles for the hero section */
+.hero-section {
+  background-image: url('images/hero-ecommerce.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #36454F; /* Set the text color to contrast with the background image */
+  padding: 20px;
+}
+
+/* Additional styles to make the text more appealing */
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Add any other custom styles to improve the look and feel of your hero section */
+/* Animation Keyframes */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Additional Cart Styles */
+.cart-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.modal-content {
+  animation: linear 1s;
+}
+
+/* Use Bootstrap Offcanvas for Cart Animation */
+.offcanvas {
+  transition: transform 0.3s ease-in-out;
+  width: 400px; /* Customize the width as needed */
+  transform: translateX(100%);
+  overflow-y: auto;
+}
+
+.offcanvas.show {
+  transform: translateX(0);
+}
+.product-added-popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.badge {
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 12px;
+}

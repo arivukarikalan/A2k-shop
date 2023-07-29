@@ -4,7 +4,7 @@
 function generateProductHTML(product) {
     return `
     <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 d-flex flex-column justify-content-between">
+      <div class="card h-100 d-flex flex-column justify-content-between p-3">
       <img src="${product.image}" alt="${product.name}" class="img-thumbnail ">
       <div class="product-info">
         <h4>${product.name}</h4>
@@ -35,6 +35,7 @@ function generateProductHTML(product) {
   // Function to handle the checkout form submission
   function handleCheckout(event) {
     alert("order placed successfully")
+    form.reset();
     event.preventDefault();
     // Your code for handling the form submission
   }
